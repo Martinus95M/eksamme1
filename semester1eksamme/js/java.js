@@ -18,7 +18,7 @@ var time = 3000;	// Time Between Switch
 // Image List
 images[0] = "css/img/ildfluer.jpeg";
 images[1] = "css/img/9075.jpg";
-images[2] = "css/img/0410.jpg";
+images[2] = "css/img/0410.JPG";
 images[3] = "css/img/nabo.jpeg";
 
 // Change Image
