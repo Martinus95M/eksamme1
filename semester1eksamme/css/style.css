@@ -415,6 +415,10 @@ header svg {
   height: 240px;
   margin-bottom: 2%;
 }
+.video video {
+  width: 100%;
+  height: 240px;
+}
 
 @media screen and (min-width: 685px) {
   .slideshow {
@@ -464,6 +468,10 @@ header svg {
     margin: auto;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
+  }
+  .video video {
+    width: 100%;
+    height: 620px;
   }
 }
 /*color bank*/
