@@ -1,0 +1,71 @@
+@import "color.scss";
+
+.info{
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-bottom: 4%;
+  border-bottom: 1px solid $black;
+  font-weight: lighter;
+}
+
+#down {
+  margin-bottom: 25px;
+}
+
+.contact{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 10px;
+  border-bottom: 1px solid $black;
+  height: 220px;
+  font-size: 14px;
+  position: relative;
+  h4 {
+    font-weight: lighter;
+  }
+}
+
+.persons{
+  float: right;
+  position: relative;
+  width: 35%;
+  height: auto;
+}
+
+@media screen and (min-width: 685px) {
+  .wrapper {
+    margin: auto;
+    width: 90%;
+
+  .info{
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-bottom: 1%;
+    border-bottom: 1px solid $black;
+    font-weight: lighter;
+  }
+
+  #down {
+    margin-bottom: 50px;
+  }
+
+  .contact{
+    margin-left: 8px;
+    margin-right: 8px;
+    border-bottom: 1px solid $black;
+    height: 220px;
+    font-size: 14px;
+    position: relative;
+    h4 {
+      font-weight: lighter;
+    }
+  }
+
+  .persons{
+    float: right;
+    position: relative;
+    width: 10%;
+    height: auto;
+  }
+  }
+}
