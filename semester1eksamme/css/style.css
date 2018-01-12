@@ -39,6 +39,7 @@ header svg {
   right: 0;
   background-color: #BB0005;
   overflow-x: hidden;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   padding-top: 60px;
   z-index: 999;
@@ -54,6 +55,7 @@ header svg {
   font-size: 25px;
   color: #fff;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-transform: uppercase;
   /*This show what side you are on in the nav bar*/
@@ -157,7 +159,8 @@ header svg {
     background-color: #BB0005;
     width: 100%;
     left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 5;
     /* Mega Menu header, if needed */
   }
@@ -252,7 +255,8 @@ header svg {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   padding: 2%;
   font-weight: lighter;
 }
@@ -290,7 +294,8 @@ header svg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding: 2%;
   }
 }
@@ -328,7 +333,8 @@ header svg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding: 2%;
   }
 }
@@ -506,7 +512,8 @@ header svg {
   font-size: 2em;
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: white;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-weight: lighter;
   font-family: 'Roboto', sans-serif;
 }
@@ -545,7 +552,8 @@ header svg {
     font-size: 2em;
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: white;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-weight: lighter;
     font-family: 'Roboto', sans-serif;
   }
@@ -581,7 +589,8 @@ header svg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-size: 2em;
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: white;
@@ -607,7 +616,7 @@ header svg {
   margin-right: 8px;
   margin-top: 10px;
   border-bottom: 1px solid #292929;
-  height: 220px;
+  height: 250px;
   font-size: 14px;
   position: relative;
 }
@@ -618,8 +627,8 @@ header svg {
 .persons {
   float: right;
   position: relative;
-  width: 35%;
-  height: auto;
+  /*width: 25%;*/
+  height: 220px;
 }
 
 @media screen and (min-width: 685px) {
@@ -641,7 +650,7 @@ header svg {
     margin-left: 8px;
     margin-right: 8px;
     border-bottom: 1px solid #292929;
-    height: 220px;
+    height: 300px;
     font-size: 14px;
     position: relative;
   }
@@ -651,8 +660,42 @@ header svg {
   .wrapper .persons {
     float: right;
     position: relative;
-    width: 10%;
-    height: auto;
+    /*width: 15%;*/
+    height: 270px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .wrapper {
+    margin: auto;
+    width: 90%;
+    max-width: 1080px;
+  }
+  .wrapper .info {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #292929;
+    font-weight: lighter;
+  }
+  .wrapper #down {
+    margin-bottom: 50px;
+  }
+  .wrapper .contact {
+    margin-left: 8px;
+    margin-right: 8px;
+    border-bottom: 1px solid #292929;
+    height: 350px;
+    font-size: 14px;
+    position: relative;
+  }
+  .wrapper .contact h4 {
+    font-weight: lighter;
+  }
+  .wrapper .persons {
+    float: right;
+    position: relative;
+    /*  width: 20%;*/
+    height: 320px;
   }
 }
 /*color bank*/
@@ -737,7 +780,8 @@ h1 {
   }
 }
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -842,5 +886,3 @@ footer #map {
     height: 170px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
